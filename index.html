@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <title>Dothings_BelenSS</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root{
+            --taronja:#F09470;
+            }
+        /*NAVEGADOR*/
+        .navegador{
+            position: fixed;
+            display: flex;
+            height: 0px;
+            width: 100%;
+            background: white;
+            padding: 2.5em 4em;
+            justify-content: flex-end;
+        }
+        .navegador a{
+            color: var(--taronja);
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            padding: 0 0.5em;
+            font-size: 1.15em;
+        }
+        /*HEADER*/
+        .cap{
+            z-index: 1;
+            /*position: absolute;*/
+            color:  var(--taronja);
+            width: 100%;
+            height: 820px;
+            padding-top: 3em
+        }
+        .frase{
+            width: 1100px;
+            font-size: 1.3em;
+            font-family: 'Roboto', sans-serif;
+            padding: 2.5em 4em;
+            line-height: 1.7em;
+        }
+        .palabra{
+            font-size: 23em;
+            font-family: 'Playfair Display', serif;
+            padding-left: 0.23em;
+        }
+        /*MAIN*/
+        .contingut{
+            display: flex;
+            /*grid-template-areas: repeat(2,1fr)/repeat(2,1fr);*/
+            height: 1100px;
+            width: 100%;
+            padding: 2.5em 4em;
+        }
+        .cont_img{
+            display: flex;
+            width: 100%
+            overflow: hidden;
+            flex-grow: 1;
+            justify-content: center;
+        }
+        .img_grande{
+            width: 50%;
+        }
+        .img_grande img{
+            transform: opacity(0);
+            transition: 2s transform;
+        }
+        .img_grande:hover img{
+            transform: opacity(0.7);
+        }
+        .img_peq{
+            width: 50%;
+        }
+        /*FOOTER*/
+        .peu{
+            display: flex;
+            width: 100%;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.2em;
+            text-decoration: none;
+            line-height: 1.7em;
+        }
+        .col1{
+            width: 50%;
+            padding: 2em 4em;
+        }
+        .col2{
+            width: 50%;
+            padding: 2em 0em;
+        }
+        col2 p:last-child{
+            align-items: baseline;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navegador">
+        <a href="#">Work</a>
+        <a href="#">Inspo</a>
+        <a href="#">About</a>
+    </nav>
+    <header class="cap">
+        <div class="frase">
+            We are a brand experience design company.  We partner with clients to help them connect with their audiences through outstanding products, experiences, and environments.  We do it through our unique design “with a point of view” approach.  We believe that enriching product experiences with a sense of style always delivers business results.
+        </div>
+        <div class="palabra">Dothings</div>
+    </header>
+    <main class="contingut">
+        <div class="cont_img">
+           <div class="img_grande">
+                <img src="img/dothings.jpg">
+           </div>
+           <div class="img_peq">
+                <img src="img/vote.jpg"><br>
+                <img src="img/TomFord.gif">
+           </div>
+            
+        </div>
+    </main>
+    <footer class="peu">
+        <div class="col1">
+            <p>61 Greenpoint Ave, Suite #306</p>
+            <p>Brooklyn, NY 11222</p>
+            <p>212 228 3328</p>
+            <a href="maito.hello@dothingsnyc.com">hello@dothingsnyc.com</a>
+        </div>
+        <div class="col2">
+            <a href="https://www.instagram.com/dothings_nyc/">Instragram</a> <br>
+            <a href="https://www.linkedin.com/company/dothings-nyc/">Linkedin</a>
+            <p>©Dothings 2019</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
